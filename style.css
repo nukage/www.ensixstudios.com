@@ -121,8 +121,26 @@ h3 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px; }
 
+h3.email {
+  border-bottom: none; }
+  @media (max-width: 768px) {
+    h3.email {
+      letter-spacing: .25rem;
+      font-size: 2rem; } }
+
 a {
-  color: #87aecf; }
+  color: #87aecf;
+  transition: all 1s; }
+
+a:hover {
+  text-decoration: none; }
+
+a h3 {
+  transition: all 2s; }
+
+a h3:hover {
+  transform: scale(1.1, 1.1);
+  color: #ff6666; }
 
 a:visited {
   text-decoration: none; }
@@ -327,3 +345,9 @@ footer {
   height: 100%;
   padding-top: 200px;
   overflow: auto; }
+
+.management-copyr {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
