@@ -1,0 +1,329 @@
+/*!
+Theme Name: ensixdesign
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ensixdesign
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ensixdesign is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+  ## Links
+  ## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+  ## Posts and pages
+  ## Comments
+# Infinite scroll
+# Media
+  ## Captions
+  ## Galleries 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+@import url(css/bootstrap.min.css);
+@import url(css/animate.min.css);
+@import url("https://fonts.googleapis.com/css?family=Six+Caps|Homenaje|Roboto");
+.wow {
+  visibility: hidden; }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 8.75s; }
+
+h1 {
+  font-family: "Six Caps", helvetica, arial, "sans sertif";
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  font-size: 5.5rem;
+  text-shadow: 6px 5px 20px black;
+  text-align: center;
+  padding-top: 30vh; }
+  @media (max-width: 768px) {
+    h1 {
+      letter-spacing: 1rem;
+      line-height: 6.5rem; } }
+
+h2 {
+  font-family: "Roboto", helvetica, arial, "sans sertif"; }
+
+h3 {
+  letter-spacing: 1rem;
+  font-size: 3rem;
+  font-weight: 800;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px; }
+
+a {
+  color: #87aecf; }
+
+a:visited {
+  text-decoration: none; }
+
+body {
+  padding-top: 5rem;
+  background: #000;
+  font-family: roboto, helvetica, arial, "sans sertif";
+  font-weight: 100;
+  font-family: "Homenaje", helvetica, arial, "sans sertif"; }
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .columnsof3 > ul > li {
+    transform: skew(40deg, 0);
+    background: rgba(0, 180, 255, 0.2);
+    position: relative;
+    left: 20px;
+    border-left: rgba(255, 255, 255, 0.2) 5px solid;
+    border-bottom: rgba(255, 255, 255, 0.2) 2px solid;
+    margin-right: 1%; } }
+
+.columnsof3 {
+  clear: both;
+  overflow: hidden;
+  width: 100%; }
+  .columnsof3 ul {
+    margin: 0;
+    padding: 0; }
+  @media (min-width: 768px) {
+    .columnsof3 li:before, .columnsof3 li:after {
+      width: 100%;
+      display: block;
+      height: 1%;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      z-index: -2;
+      transition: all 1.5s;
+      background: rgba(255, 255, 255, 0.2); }
+    .columnsof3 li:after {
+      top: 0; }
+    .columnsof3 li:hover:after {
+      height: 100%; }
+    .columnsof3 li:hover:before {
+      height: 100%; }
+    .columnsof3 li:hover {
+      border-top: 4px solid rgba(255, 255, 255, 0.8);
+      border-left: 4px solid rgba(255, 255, 255, 0.8);
+      border-bottom: 4px solid rgba(0, 0, 0, 0.8);
+      border-right: 4px solid rgba(0, 0, 0, 0.8); } }
+  .columnsof3 li {
+    list-style: none;
+    display: inline;
+    border: 4px solid transparent;
+    text-align: center;
+    width: 31%;
+    transition: all 1s;
+    overflow: hidden; }
+    @media (min-width: 768px) {
+      .columnsof3 li {
+        float: left;
+        display: block; } }
+    .columnsof3 li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 20px 0;
+      transition: all 1s;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .columnsof3 li a {
+          transform: skew(-40deg, 0); } }
+    .columnsof3 li a:hover {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      z-index: 10;
+      font-size: 110%; }
+
+.bg-inverse {
+  background: none !important; }
+
+@media (min-width: 768px) {
+  .columnsof3 {
+    margin-top: 100px; } }
+
+.first-section {
+  margin-top: 100vh;
+  clear: both;
+  position: relative;
+  z-index: 20; }
+
+.about-gradient {
+  background: linear-gradient(to bottom, rgba(29, 66, 117, 0), #1d4275);
+  height: 500px;
+  clear: both;
+  position: relative;
+  z-index: 20;
+  margin-top: -500px; }
+
+.about-section {
+  clear: both;
+  position: relative;
+  z-index: 20;
+  background: linear-gradient(to bottom, #1d4275, rgba(29, 66, 117, 0.7));
+  color: #fff;
+  padding: 150px 0;
+  width: 100%;
+  font-size: 25px; }
+  .about-section label {
+    font-weight: 100;
+    font-size: 16px; }
+  .about-section button {
+    color: white;
+    border-color: white;
+    cursor: pointer;
+    font-family: "Homenaje", helvetica, arial, "sans sertif"; }
+  .about-section button:hover {
+    color: #121212;
+    background: white; }
+  .about-section form {
+    text-align: left; }
+
+footer {
+  position: relative;
+  z-index: 20;
+  padding: 40px 0; }
+
+.buildings {
+  background: url("img/nyc3.png");
+  background-size: cover;
+  height: 1080px;
+  position: relative;
+  margin-top: 200px; }
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh; }
+  .cover .hi2 {
+    width: 80%;
+    margin: 10vh auto;
+    height: 80vh; }
+  .cover .hi3 {
+    background: url(img/ensix-logo.png) no-repeat center center rgba(0, 0, 0, 0.45);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: .1;
+    background-size: contain; }
+  .cover .hi {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center; }
+    .cover .hi span {
+      color: #ff0;
+      cursor: pointer;
+      text-decoration: underline; }
+    .cover .hi em {
+      font-style: normal; }
+      .cover .hi em.hidden {
+        display: none; }
+
+.tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .tv .screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: auto;
+    opacity: 0;
+    transition: opacity .5s; }
+    .tv .screen.active {
+      opacity: 1; }
+
+.cover-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  padding-top: 200px;
+  overflow: auto; }

@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'browserSync',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json www.ensixstudios.com@1.0.0 No description
+5 warn package.json www.ensixstudios.com@1.0.0 No repository field.
+6 warn package.json www.ensixstudios.com@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'browserSync', null ]
+9 verbose cache add name=undefined spec="browserSync" args=["browserSync",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'browserSync',
+10 verbose parsed url   path: 'browserSync',
+10 verbose parsed url   href: 'browserSync' }
+11 silly lockFile 3387f2a2-browserSync browserSync
+12 verbose lock browserSync /Users/Tom/.npm/3387f2a2-browserSync.lock
+13 silly lockFile 3387f2a2-browserSync browserSync
+14 silly lockFile 3387f2a2-browserSync browserSync
+15 verbose addNamed [ 'browserSync', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile c50515c3-browserSync browserSync@
+18 verbose lock browserSync@ /Users/Tom/.npm/c50515c3-browserSync.lock
+19 silly addNameRange { name: 'browserSync', range: '*', hasData: false }
+20 verbose request where is /browserSync
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 61ede06aaef45daf
+23 verbose url raw /browserSync
+24 verbose url resolving [ 'https://registry.npmjs.org/', './browserSync' ]
+25 verbose url resolved https://registry.npmjs.org/browserSync
+26 verbose request where is https://registry.npmjs.org/browserSync
+27 info trying registry request attempt 1 at 11:23:48
+28 http GET https://registry.npmjs.org/browserSync
+29 http 404 https://registry.npmjs.org/browserSync
+30 silly registry.get cb [ 404,
+30 silly registry.get   { 'content-type': 'application/json',
+30 silly registry.get     'cache-control': 'max-age=0',
+30 silly registry.get     'content-length': '2',
+30 silly registry.get     'accept-ranges': 'bytes',
+30 silly registry.get     date: 'Wed, 07 Jun 2017 15:23:50 GMT',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     age: '0',
+30 silly registry.get     connection: 'keep-alive',
+30 silly registry.get     'x-served-by': 'cache-jfk8120-JFK',
+30 silly registry.get     'x-cache': 'MISS',
+30 silly registry.get     'x-cache-hits': '0',
+30 silly registry.get     'x-timer': 'S1496849030.951743,VS0,VE823',
+30 silly registry.get     vary: 'Accept-Encoding' } ]
+31 silly lockFile c50515c3-browserSync browserSync@
+32 silly lockFile c50515c3-browserSync browserSync@
+33 error 404 Not Found
+33 error 404
+33 error 404 'browserSync' is not in the npm registry.
+33 error 404 You should bug the author to publish it
+33 error 404 It was specified as a dependency of 'www.ensixstudios.com'
+33 error 404
+33 error 404 Note that you can also install from a
+33 error 404 tarball, folder, or http url, or git url.
+34 error System Darwin 13.4.0
+35 error command "node" "/usr/local/bin/npm" "install" "browserSync" "--save-dev"
+36 error cwd /Volumes/Macintosh HD/Documents/Dropbox/Websites/www.ensixstudios.com
+37 error node -v v0.10.33
+38 error npm -v 1.4.28
+39 error code E404
+40 verbose exit [ 1, true ]
